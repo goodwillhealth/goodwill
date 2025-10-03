@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Health Coaching — Transform • Grow • Thrive</title>
+  <meta name="description" content="Personalised health, mental health and fitness coaching — weight loss, weight gain, mindset and sustainable habits." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --radius:16px; --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%, #081426 100%);color:#e6eef6}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:20px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px}
+    nav a:hover{color:#fff;background:var(--glass)}
+    .cta{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#042027;padding:8px 12px;border-radius:10px;font-weight:600;text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;margin-top:28px}
+    .hero .title{font-size:clamp(22px,4vw,36px);line-height:1.05;margin:0}
+    .hero p{color:var(--muted);margin-top:12px}
+    .features{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .feature{background:rgba(255,255,255,0.03);padding:10px 12px;border-radius:12px;font-size:14px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .plan{display:flex;flex-direction:column;gap:8px}
+    .plan h4{margin:0}
+    .price{font-weight:700;font-size:20px}
+
+    /* Services */
+    section{margin-top:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{padding:16px;border-radius:12px;background:rgba(255,255,255,0.02)}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:8px}
+    .t{min-width:260px}
+
+    /* Contact */
+    form{display:grid;gap:10px}
+    input,textarea,button,select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    button{background:var(--accent);color:#042027;border:none;font-weight:700;cursor:pointer;padding:12px}
+
+    footer{margin-top:36px;color:var(--muted);font-size:14px;padding-bottom:40px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+    @media (max-width:480px){
+      header{flex-direction:column;align-items:flex-start}
+      nav{order:2;width:100%;display:flex;flex-wrap:wrap}
+      .logo{width:40px;height:40px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">HC</div>
+        <div>
+          <div style="font-weight:700">GoodWill Health/Mental Health Coaching</div>
+          <div style="font-size:13px;color:var(--muted)">Health • Mental Wellness • Fitness</div>
+        </div>
+      </div>
+      <nav aria-label="main navigation">
+        <a href="#services">Services</a>
+        <a href="#programs">Programs</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="cta" href="#contact">Book Free Call</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1 class="title">Personalised coaching for your body and mind — sustainable results, kind accountability.</h1>
+          <p>Lose weight, gain healthy muscle, improve mental resilience and build habits that stick. Online & in-person options.</p>
+          <div class="features">
+            <div class="feature">Customized meal & activity plans</div>
+            <div class="feature">1:1 mental health focused coaching</div>
+            <div class="feature">Weekly check-ins & progress tracking</div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:18px">
+            <a class="cta" href="#contact">Start your journey</a>
+            <a style="color:var(--muted);align-self:center" href="#programs">See programs →</a>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="color:var(--muted);font-size:13px">Popular plan</div>
+              <h3 style="margin:6px 0">12-week Transform</h3>
+            </div>
+            <div class="price">₹2500/mo</div>
+          </div>
+          <div style="margin-top:12px" class="plan">
+            <div>• Weekly 1:1 coaching (30 min)</div>
+            <div>• Personalized nutrition & training</div>
+            <div>• Mental skills + habit coaching</div>
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button onclick="document.location='#contact'">Book free call</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="grid" style="margin-top:12px">
+          <div class="service">
+            <h3>Weight Loss</h3>
+            <p class="muted">Sustainable fat loss with evidence-based nutrition & behaviour change.</p>
+          </div>
+          <div class="service">
+            <h3>Weight Gain</h3>
+            <p class="muted">Healthy muscle and bodyweight gain plans tailored to your lifestyle.</p>
+          </div>
+          <div class="service">
+            <h3>Mental Health Coaching</h3>
+            <p class="muted">Goal-focused mental skills, stress management, and daily routines to support wellbeing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs">
+        <h2>Programs</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
+          <div class="card">
+            <h4>Starter — 4 weeks</h4>
+            <div>Intro coaching, baseline plan, 2 check-ins.</div>
+          </div>
+          <div class="card">
+            <h4>Transform — 12 weeks</h4>
+            <div>Full coaching, weekly check-ins, habit coaching and mental skills.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>What clients say</h2>
+        <div class="testimonials" style="margin-top:12px">
+          <div class="card t">
+            <strong>Ritu</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Lost 8kg over 4 months without feeling deprived — the mindset sessions really helped.</div>
+          </div>
+          <div class="card t">
+            <strong>Ankit</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Gained 6kg of muscle and learned to manage stress during exams.</div>
+          </div>
+          <div class="card t">
+            <strong>Rahul</strong>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">In 3 months I can manage anxiety and stress and feel a positivity in my life, thanks to my mental health coach.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+      <h2>Book a free call here:</h2>
+      <iframe data-tally-src="https://tally.so/embed/31q95W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="321" frameborder="0" marginheight="0" marginwidth="0" title="Contact form">
+        </iframe>
+        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© GoodWill Health/Mental Health Coaching • 2025 • Your fitness buddy</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const f=new FormData(e.target);
+      // Demo: send to Formspree or your backend. For now show a success message.
+      alert('Thanks '+(f.get('name')||'')+" — request received. We'll contact you to book the call.")
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
