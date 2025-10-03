@@ -40,6 +40,16 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .service{padding:16px;border-radius:12px;background:rgba(255,255,255,0.02)}
 
+    .p_row {
+        display: flex;
+        align-items: center
+        }
+
+    .p_column {
+        flex: 33.33%;
+        padding: 5px;
+        }
+
     /* Testimonials */
     .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:8px}
     .t{min-width:260px}
@@ -147,6 +157,20 @@
             <div>Full coaching, weekly check-ins, habit coaching and mental skills.</div>
           </div>
         </div>
+      </section>
+
+      <section id="photos">
+       <div class="p_row">
+            <div class="p_column">
+                <img src="p1.png" alt="" style="width:100%">
+            </div>
+            <div class="p_column">
+                <img src="p2.png" alt="" style="width:100%">
+            </div>
+            <div class="p_column">
+                <img src="p3.png" alt="" style="width:100%">
+            </div>
+            </div>
       </section>
 
       <section id="testimonials">
